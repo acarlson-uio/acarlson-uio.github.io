@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Homepage Andreas Carlson | Collaborations</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/hover.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/ie6-transparency.js"></script>
+<script>DD_belatedPNG.fix('#header h1 a, #header h2');</script>
+<link type="text/css" rel="stylesheet" type="text/css" href="styles/ie6.css" />
+<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+<!--[if IE 7]><link type="text/css" rel="stylesheet" type="text/css" href="styles/ie7.css" /><![endif]-->
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <h1><a href="#">Sanura</a></h1>
+    <h2>     </h2>
+  </div>
+  <!--end header-->
+  <ul id="nav">
+    <li><a href="index.html" class="first">Home</a></li>
+    <li><a href="portfolio.html" class="current">Research</a>
+      <ul>
+        <li><a href="adhesion.html">Biology</a></li>
+        <li><a href="capillaryflows.html">Physics</a></li>
+ 	 <li><a href="collaborations.html" class="current">Collaborations</a></li>
+    </ul>
+    </li>
+    <li><a href="team.html">People</a></li>
+    <li><a href="articles.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <!--end nav-->
+  <div class="line"></div>
+  <div id="frontpage">
+    <h2 class="page-title">Collaborations</h2>
+    <p>I believe that combining different expertise and experience in 
+research projects enable us to deepen our understanding and solve higly complex problems.</br> 
+I am (and have been) privileged to have the oportunity to work with highly talented and inspiring researchers 
+within a wide range of fields (applied mathematics, engineering, chemistry, material science, physics and biology), on multi-diciplinary problems. </p>
+    <div id=colmap></div>
+ <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('colmap');
+        var myLatLng = {lat: 59.939811, lng: 10.723270};
+        var harvard = {lat: 42.378041, lng: -71.116730};
+        var brown = {lat: 41.826564, lng: -71.402586};
+        var princton= {lat: 40.344054, lng: -74.651443};
+        var unc= {lat: 35.784620, lng: -78.682057};
+	var KTH= {lat: 59.359867, lng: 18.070842};
+	var Aalto= {lat: 60.186771, lng: 24.828031};
+	var KAIST= {lat: 36.369358, lng: 127.364223};
+	var Todai= {lat: 35.712656, lng: 139.762029};
+	var Bologna= {lat: 44.496232, lng: 11.354731};
+        var ASCOMP={lat:47.381126, lng:8.510304};
+	var mapOptions = {
+          center: new google.maps.LatLng(44.497, 11.35928),
+          zoom: 2,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
+      var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'University of Oslo'
+  });
+var marker = new google.maps.Marker({
+    position: harvard,
+    label: 'B',
+    map: map,
+    title: 'Harvard University'
+  });
+var marker = new google.maps.Marker({
+    position: KTH,
+    label: 'A',
+    map: map,
+    title: 'Royal Institute of Technology'
+  });      
+var marker = new google.maps.Marker({
+    position: brown,
+    label: 'C',
+    map: map,
+    title: 'Brown University'
+  });
+var marker = new google.maps.Marker({
+    position: princton,
+    label: 'D',
+    map: map,
+    title: 'Princeton University'
+  });
+var marker = new google.maps.Marker({
+    position: unc,
+    label: 'E',
+    map: map,
+    title: 'North Carolina State University'
+  });
+var marker = new google.maps.Marker({
+    position: KAIST,
+    label: 'F',
+    map: map,
+    title: 'KAIST'
+  });
+var marker = new google.maps.Marker({
+    position: Todai,
+    label: 'G',
+    map: map,
+    title: 'University of Tokyo'
+  });
+var marker = new google.maps.Marker({
+    position: Bologna,
+    label: 'H',
+    map: map,
+    title: 'University of Bologna'
+  });
+var marker = new google.maps.Marker({
+    position: Aalto,
+    label: 'I',
+    map: map,
+    title: 'Aalto University'
+  });
+var marker = new google.maps.Marker({
+    position: ASCOMP,
+    label: 'J',
+    map: map,
+    title: 'ASCOMP'
+  });
+}
+      google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+</br>
+<p><b>(A) Royal Institute of Technology</b></br>
+Prof. Gustav Amberg, <i>Department of Mechanics </i></br>
+Dr. Minh Do-Quang, <i>Department of Mechanics </i></br>
+Prof. Berk Hess, <i> Department of Physics and Science of Life Laberatory</i> </br>
+Prof. Pavel Kudinov,<i> Department of Physics, Division of Nuclear Power Safety</i> </br>
+</br>
+<p><b>(B) Harvard University</b></br>
+Prof. L. Mahadevan, <i>Paulson School of Engineering and Applied Sciences, Department of Physics, and Organismic and Evolutionary Biology </i></br>
+Prof. Jagesh V. Shah, <i> Department of Systems Biology</i> </br>
+Prof. Joanna Aizenberg, <i>Paulson School of Engineering and Applied Sciences</i></br>
+Dr. Yasmin Meroz, <i>Paulson School of Engineering and Applied Sciences</i></br>
+</br>
+<b>(C) Brown University</b></br>
+Prof. Shreyas Mandre, <i>School of Engineering </i></br>
+Prof. Tapio Ala-Nissil&auml;, <i>Department of Physics</i> (also at Aalto University)</br>
+</br>
+<b>(D) Princeton University</b></br>
+Prof. Howard A. Stone, <i>Department of Mechanical and Aerospace Engineering</i></br>
+</br>
+<b>(E) North Carolina State University</b></br>
+Prof. Nam Dinh, <i>Department of Nuclear Engineering</i></br>
+</br>
+<b>(F) Korean Advanced Institute of Technology</b></br>
+Prof. Pilnam Kim, <i>Department of Bio and Brain Engineering</i></br>
+</br>
+<b>(G) University of Tokyo</b></br>
+Prof. Junichiro Shiomi, <i>Department of Physics</i></br>
+</br>
+<b>(H) University of Bologna</b></br>
+Dr. Gabriele Bellani, <i>Department of Industrial Engineering</i></br>
+</br>
+<b>(I) Aalto University</b></br>
+Prof. Tapio Ala-Nissil&auml;, <i>Department of Physics</i></br>
+</br>
+<b>(J) ASCOMP</b></br>
+Dr. Djamel Lakehal, <i>ASCOMP</i></br>
+Dr. Chidambaram Narayanan, <i>ASCOMP</i></br>
+</br>
+</p>
+</div>
+  
+<!--end contact-page-->
+  <div id="footer">
+    <div class="line"></div>
+  </div>
+  <!--end footer-->
+</div>
+<!--end wrap-->
+<div class="cache-images"> <img src="images/submit-button-orange-hover.jpg" width="0" height="0" alt="" /> </div>
+<!--end cache-images-->
+<div align=center>Based on a <a href='http://all-free-download.com/free-website-templates/'>free website template</a></div></body>
+</html>
