@@ -39,7 +39,7 @@
   <div class="line"></div>
   <div id="frontpage">
  <p>We are a research group working on problems in fluid mechanics, soft matter physics and biophysics. Our research methodology is based on a combination of applied mathematics, experiments and numerical simulations. Articles from the group can also be found on Prof. Andreas Carlson's <a href="https://scholar.google.com/citations?user=lIgZ0i8AAAAJ&hl=en">google scholar</a>.</br> </p>
-    <div class="line"></div>
+    <!-- <div class="line"></div>
     <div id="featured-projects">
       <h3>Projects</h3>
       <div class="featured-project-bg"> <img src="jinbangproject.gif" width="266" height="200"alt="" /> </div>
@@ -48,7 +48,21 @@
       <div class="featured-project-bg"> <img src="bidishaproject.gif" width="266" height="200"alt="" /> </div>
       <div class="featured-project-bg first"> <a href="https://arxiv.org/abs/2501.17080"><img src="stephaneproject.gif" width="266" height="200" alt="" /></a> </div>      
       <div class="featured-project-bg"> <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/sliding-vibrating-and-swinging-droplets-on-an-oscillating-fibre/ABF004C37C015ADBAE860519AF77CEC1"><img src="stephaneproject.png" width="266" height="200" alt="" /></a> </div>
-    </div>
+    </div> -->
+    <div class="featured-project-bg">
+  <img id="project1" src="jinbangproject1.gif" width="266" height="200" alt="">
+</div>
+
+<script>
+  const images = ["jinbangproject1.gif", "viraproject.gif", "annetteproject.png"];
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    document.getElementById("project1").src = images[index];
+  }, 2000); // changes every 2 seconds
+</script>
+
     <!--end featured-projects-->
     <div class="line"></div>
     <div id="content">
@@ -111,6 +125,7 @@
 <!--end wrap-->
 <div align=center>Illustration in the banner top right made by DALL-E and the layout is based on a <a href='http://all-free-download.com/free-website-templates/'>free website template</a></div></body>
 </html>
+
 
 
 
