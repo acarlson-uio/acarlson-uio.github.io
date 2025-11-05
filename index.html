@@ -51,42 +51,48 @@
     </div> -->
 <div class="projects-container">
   <div class="featured-project-bg">
-    <img id="project1" src="jinbangproject.gif" width="350" height="300" alt="">
+    <img id="project1" src="jinbangproject.gif" alt="">
   </div>
   <div class="featured-project-bg">
-    <img id="project2" src="viraproject.gif" width="350" height="300" alt="">
+    <img id="project2" src="viraproject.gif" alt="">
   </div>
 </div>
 
 <script>
-  // Image lists for each project
-  const images1 = [
-    "jinbangproject.gif",
-    "annetteproject.png",
-    "stephaneproject.gif"
-  ];
+  const images1 = ["jinbangproject.gif", "annetteproject.png", "stephaneproject.gif"];
+  const images2 = ["viraproject.gif", "bidishaproject.gif", "stephaneproject.png"];
+  let index1 = 0, index2 = 0;
 
-  const images2 = [
-    "viraproject.gif",
-    "bidishaproject.gif",
-    "stephaneproject.png"
-  ];
-
-  let index1 = 0;
-  let index2 = 0;
-
-  // Change project 1
   setInterval(() => {
     index1 = (index1 + 1) % images1.length;
     document.getElementById("project1").src = images1[index1];
-  }, 5000);
+  }, 2000);
 
-  // Change project 2
   setInterval(() => {
     index2 = (index2 + 1) % images2.length;
     document.getElementById("project2").src = images2[index2];
-  }, 5000);
+  }, 2000);
 </script>
+
+<style>
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.featured-project-bg img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+</style>
+
 
 
     <!--end featured-projects-->
@@ -151,6 +157,7 @@
 <!--end wrap-->
 <div align=center>Illustration in the banner top right made by DALL-E and the layout is based on a <a href='http://all-free-download.com/free-website-templates/'>free website template</a></div></body>
 </html>
+
 
 
 
